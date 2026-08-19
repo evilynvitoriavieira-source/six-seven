@@ -37,21 +37,23 @@
         <p>farmando aura</p>
     </header>
     <main>
-         <img src="mar.png" alt="imagem sobre um mar muito animado e cheio de vida">
+         <img src="mar.png" alt="imagem sobre um mar muito animado e cheio de vida">?
          <div>
         <h2>belinha diva</h2> 
         <p class="autor">por: evilyn vieira</p> 
         <p>evilyn arrasa muito</p>
         <button>👍🏼<span>0</span></button>
+        <button>👎<span>0</span></button>
         </div>
     </main>
 </body>
 <script>
-   const botao = document. querySelector("button");
-   botao.addEventListener("click",botaoClicado);
+  botoes.forEach (function(botao) ) {
+   botao.addEventListener("click", botaoClicado);
    function botaoClicado() {
     let texto = botao.querySelector ("span");
     texto.textContent++;
    }
+}
 </script>
 </html>
